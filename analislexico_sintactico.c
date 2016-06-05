@@ -5,10 +5,10 @@
  *	Implementa un analizador léxico que reconoce números, literales en cadena y signos de puntuación para un lenguaje
  * 	con sintaxis tipo Json.
  *  
- *  Analizador Sintactico
- *	Descripcion:
- *Implementar un Analizador Sintáctico que reconozca códigos 
- *fuentes escritos en el lenguaje Json simplificado propuesto
+ *  	.:Analizador Sintactico:.
+ *		Descripcion:
+ *	Implementar un Analizador Sintáctico que reconozca códigos 
+ *	fuentes escritos en el lenguaje Json simplificado propuesto
  *	
  */
 
@@ -127,7 +127,7 @@ void sigLex() {
 						} 
 
 						else{
-							//printf
+							
 							sprintf(msg,"No se esperaba '%c'",c);
 							error(msg);
 							estado=-1;
