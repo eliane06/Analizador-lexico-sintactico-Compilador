@@ -20,9 +20,4 @@ Los archivos de entrada y salida se llaman fuente.txt y output.txt ya puestos de
 Los errores sintacticos se muestran en consola.
 
 OBS: Se trato el ciclo infinito del TP1.
-# Tp2Compiladores
-# Tp2Compiladores
-# Tp2Compiladores
-# Tp2Compiladores
-=======
->>>>>>> 4171dacd563762778af158e4c8b717aeea8d0010
+
