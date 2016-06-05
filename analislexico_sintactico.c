@@ -321,7 +321,7 @@ void sigLex() {
 	}
 }
 
-/**/
+/*ANALSIS SINTACTICO*/
 int p_json[2] = {L_LLAVE, L_CORCHETE};
 int p_element[2]= {L_LLAVE, L_CORCHETE};
 int p_object[1] ={L_LLAVE};
