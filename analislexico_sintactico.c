@@ -358,10 +358,9 @@ void element(int synchset[]);
 
 int busqueda(int v[], int len) {
    int i=0;
-   //printf("%d", t.compLex);
+   
    do { 
-      /*if (t.compLex == R_LLAVE)
-         printf("%d", v[i]); */
+      
 
       if (v[i] == t.compLex) {
          
@@ -397,7 +396,6 @@ void errorS(){
 
 void match(int lex) { 
     
-    //printf("matchea %s %s linea %d\n",t.lexema,tokens[t.compLex], numLinea);
     if (t.compLex == lex) 
 	sigLex();
     else 
@@ -418,7 +416,7 @@ void scanto(int synchset[], int len) {
 void check_input(int primeros[], int siguientes[], int len1, int len2) {
     
     if (!busqueda(primeros, len1)){ 
-       //printf("tuvo error");
+       
        errorS(); 
        printf("%d",numLinea);
        scanto(unnion(primeros, siguientes, len1, len2), len1+len2+1);
@@ -462,21 +460,21 @@ void attribute(int synchset[]) {
    attribute_name(s_att_name);
    match(DOS_PUNTOS);  
    attribute_value(s_att_value);
-   //printf("passAttribut");
+   
    check_input(synchset, p_attribute, 2, 1);
 }
 
 
 void att(int synchset[]) {
-  // printf("cerca");
+  
    if (t.compLex == COMA) {
       check_input(p_att, s_att, 1,1);
       match(COMA);
-    //  printf("coma");
+    
       attribute(s_attribute);
-      //printf("passattribute");
+      
       att(s_att);
-      //printf("passatt");
+      
       check_input(synchset, p_att, 1, 1);
    } 
    
@@ -496,9 +494,9 @@ void ele(int synchset[]) {
 void attribute_list(int synchset[]) {
    check_input(p_attList, s_attList, 1, 1);
    attribute(s_attribute);
-   //printf("pas");
+   
    att(s_att);
-   //printf("pasit");
+   
    check_input(synchset, p_attList, 1, 1);
 }
 
@@ -515,9 +513,9 @@ void objectO(int synchset[]) {
    if (t.compLex == R_LLAVE) 
       match(R_LLAVE);
    else {
-     //printf("Paso1");
+     
       attribute_list(s_attList);
-     //printf("Paso");
+     
       match(R_LLAVE);
    }
     check_input(synchset, p_objectO, 4, 2);
