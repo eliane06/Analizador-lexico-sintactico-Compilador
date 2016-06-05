@@ -1,9 +1,14 @@
 /*
- *	Analizador Léxico	
+ *	Analizador Léxico 
  *	Curso: Compiladores y Lenguajes de Bajo de Nivel
  *	Descripcion:
  *	Implementa un analizador léxico que reconoce números, literales en cadena y signos de puntuación para un lenguaje
  * 	con sintaxis tipo Json.
+ *  
+ *  Analizador Sintactico
+ *	Descripcion:
+ *Implementar un Analizador Sintáctico que reconozca códigos 
+ *fuentes escritos en el lenguaje Json simplificado propuesto
  *	
  */
 
